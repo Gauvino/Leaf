@@ -905,13 +905,13 @@ index bcc6ba95bd21c7972865838c636a03f50b6c1f1a..c3fcd8dd7dbb1e1a18e17c014c1e6411
 +    // Purpur end
  }
 diff --git a/src/main/java/org/bukkit/entity/LivingEntity.java b/src/main/java/org/bukkit/entity/LivingEntity.java
-index 5c29956c6db53440322330ff723c7087193641f1..544b1d8aa5665fd2567605014adee6222d2cb312 100644
+index a1e54e9d14393a6c0ea57cca854071c5396d9717..150d2a6fe437ef142fb16ff3b7bacd20f95b928e 100644
 --- a/src/main/java/org/bukkit/entity/LivingEntity.java
 +++ b/src/main/java/org/bukkit/entity/LivingEntity.java
-@@ -1447,4 +1447,27 @@ public interface LivingEntity extends Attributable, Damageable, ProjectileSource
+@@ -1458,4 +1458,27 @@ public interface LivingEntity extends Attributable, Damageable, ProjectileSource
       */
-     void setBodyYaw(float bodyYaw);
-     // Paper end - body yaw API
+     boolean canUseEquipmentSlot(org.bukkit.inventory.@NotNull EquipmentSlot slot);
+     // Paper end - Expose canUseSlot
 +
 +    // Purpur start
 +    /**
